@@ -3,6 +3,7 @@
 git add .
 git status 
 git log
+git log --oneline # traz todas as alteracoes em uma linha
 git commit -m "teste"
 git remote # Lista os servidores remotos
 git remote add NOME_DO_REPO /caminho/do/servidor/remoteo # Adiciona servidor remoto com nome especifico
@@ -15,6 +16,7 @@ git branch BRANCH_NAME # Adiciona uma branch com nome especifico
 git checkout BRANCH_NAME # Altera branch ativa master para criada
 git rebase BRANCH # Carrega alteracoes de branches na master
 git checkout -- <file> # Volta o arquivo anterior sem as alteracoes.
+git checkout hash_commit # Volta o arquivo para a modificação criada no momento do commit
 git revert nome_do_arquivo # Volta estado do arquivo antes do add. Realizado isto é necessario o comando anterior. Em caso de commit, pode-se pegar o hash da ultima versao com o comando git log e aplicar o git rever HASH
 git stash # Salva o arquivo em local temporario para depois aplica-lo.
 git stash list # lista as informacoes de stashs salvos
